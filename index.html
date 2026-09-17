@@ -31,7 +31,6 @@
     overflow-x: hidden;
   }
 
-  /* NEBBIA */
   #fog {
     position: fixed;
     top: 0; left: 0;
@@ -40,7 +39,6 @@
     pointer-events: none;
   }
 
-  /* LAYOUT */
   .wrap {
     position: relative;
     z-index: 1;
@@ -49,7 +47,6 @@
     padding: 0 2rem;
   }
 
-  /* NAV */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -90,7 +87,6 @@
 
   .nav-links a:hover { color: var(--gold); }
 
-  /* HERO */
   .hero {
     padding: 18vh 0 10vh;
     min-height: 100vh;
@@ -156,7 +152,6 @@
     background: var(--text-dim);
   }
 
-  /* SEZIONI */
   section {
     padding: 6rem 0;
     border-top: 1px solid var(--border);
@@ -181,7 +176,6 @@
     max-width: 60px;
   }
 
-  /* BIO */
   .bio-text {
     font-size: 1.1rem;
     line-height: 1.9;
@@ -198,7 +192,6 @@
     margin-top: 1.5rem;
   }
 
-  /* CREDITS */
   .credits-list {
     list-style: none;
   }
@@ -250,7 +243,6 @@
     white-space: nowrap;
   }
 
-  /* SOCIAL */
   .social-links {
     display: flex;
     flex-wrap: wrap;
@@ -281,7 +273,6 @@
   .social-links a:hover { color: var(--gold); }
   .social-links a:hover::before { width: 30px; }
 
-  /* CONTATTI */
   .contact-email {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.4rem;
@@ -301,7 +292,6 @@
     color: var(--text-dim);
   }
 
-  /* FOOTER */
   footer {
     padding: 2.5rem 0;
     border-top: 1px solid var(--border);
@@ -332,13 +322,11 @@
     color: var(--text-dim);
   }
 
-  /* ANIMAZIONI */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(20px); }
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* DISCOGRAFIA */
   .disco-intro {
     font-size: 1rem;
     line-height: 1.9;
@@ -417,7 +405,6 @@
   }
 
   .disco-link:hover { color: var(--gold); }
-
 
   @media (max-width: 600px) {
     nav { padding: 1rem 1.2rem; flex-wrap: wrap; gap: 0.8rem; }
@@ -616,7 +603,7 @@
       Mi chiamo <strong>Gianluca Bartolo</strong>. Compongo musica per immagini, suono la chitarra e produco. Da sempre la musica è il mio linguaggio, il mio lavoro e la mia passione.
     </p>
     <p class="bio-text">
-      Laureato in <strong>Musica Applicata alle Immagini</strong> al Conservatorio G.B. Martini di Bologna, lavoro da anni per cinema, documentari, pubblicità e videogiochi — cercando sempre un legame profondo tra suono e storia. Ho collaborato con artisti come <strong>Massimo Luca</strong>, <strong>Piero Pelù</strong>, <strong>Craig Shumacher</strong>, <strong>J.D. Foster</strong>,<strong>The Zen Circus</strong>, <strong>Tre Allegri Ragazzi Morti</strong>, <strong>DJ Aladin</strong>,<strong>Umberto Maria Giardini</strong>,<strong>Francesco Motta</strong>
+      Laureato in <strong>Musica Applicata alle Immagini</strong> al Conservatorio G.B. Martini di Bologna, lavoro da anni per cinema, documentari, pubblicità e videogiochi — cercando sempre un legame profondo tra suono e storia. Ho collaborato con artisti come <strong>Massimo Luca</strong>, <strong>Piero Pelù</strong>, <strong>Craig Shumacher</strong>, <strong>J.D. Foster</strong>, <strong>The Zen Circus</strong>, <strong>Tre Allegri Ragazzi Morti</strong>, <strong>DJ Aladin</strong>, <strong>Umberto Maria Giardini</strong>, <strong>Francesco Motta</strong>.
     </p>
     <p class="bio-text">
       Ho calcato centinaia di palchi in Italia e all'estero con progetti come <strong>Il Pan del Diavolo</strong>, <strong>Granpa</strong> e <strong>Stella Maris</strong>. Sono anche direttore dell'orchestra giovanile alla <strong>Fondazione La Nuova Musica di Bologna</strong>.
@@ -627,14 +614,13 @@
       <a href="https://www.youtube.com/@gianlucabartolo8044" target="_blank">Youtube</a>
       <a href="https://www.instagram.com/gianlucabartolo/" target="_blank">Instagram</a>
       <a href="https://www.facebook.com/officialgianlucabartolo/" target="_blank">Facebook</a>
-      <a href="https://gianlucabartolo.com/dischi-e-collaborazioni/" target="_blank">Discografia</a>
     </div>
   </section>
 
   <!-- CONTATTI -->
   <section id="contatti">
     <div class="section-label">Contatti</div>
-    <a href="mailto:gianlucabartolo@gmail.com" class="contact-email">gianlucabartolo@gmail.com</a>
+    <a href="mailto:info@gianlucabartolo.com" class="contact-email">info@gianlucabartolo.com</a>
     <div class="contact-city">Bologna, Italia</div>
   </section>
 
@@ -648,7 +634,6 @@
 </footer>
 
 <script>
-// NEBBIA ANIMATA
 const canvas = document.getElementById('fog');
 const ctx = canvas.getContext('2d');
 
